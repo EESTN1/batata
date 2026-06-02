@@ -898,7 +898,6 @@ input, textarea {
 
 .card img{
     flex: 0 0 5em;
-    padding: 1em;
     font-size: 3rem;
     border-radius: .2em;
     text-align: center;
@@ -1005,13 +1004,6 @@ input, textarea {
     align-items:flex-start;
   }
   
-.card img{
-    flex: 0 0 5em;
-    font-size: 3rem;
-    border-radius: .2em;
-    text-align: center;
-    align-content: center;
-}
 
 
 
