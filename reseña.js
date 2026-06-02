@@ -103,16 +103,9 @@ async function loadReviews() {
 }
 
 // ✏️ editar
-window.editReview = async (id, oldText) => {
-  const newText = prompt("Editar reseña:", oldText);
-  if (newText) {
-    await updateDoc(doc(db, "reviews", id), {
-      comment: newText
-    });
-    loadReviews();
-  }
-};
 
+
+//
 // 🗑️ eliminar
 window.deleteReview = async (id) => {
   await deleteDoc(doc(db, "reviews", id));
