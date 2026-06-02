@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Batat Rojense</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+
+    <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+      <span>Batata</span> Rojense
+    </div>
+
+    <nav class="nav" id="nav">
+      <a href="#hero">Inicio</a>
+      <a href="#identidad">Identidad</a>
+      <a href="#nutricion">Nutrición</a>
+      <a href="#quienes">Quiénes Somos</a>
+      <a href="#instituciones">Instituciones</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">
+      ☰
+    </button>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+
+    <div class="hero-left">
+
+      <p class="hero-tag">
+            
+      </p>
+
+      <h1>
+        Más que un snack:
+        <span>un proyecto educativo.</span>
+      </h1>
+
+      <p class="hero-description">
+        Batat Rojense es un alimento agroecológico desarrollado junto
+        a instituciones educativas, que une nutrición, producción local
+        y aprendizaje colaborativo.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn-primary">
+          <a href="#identidad">Conocer el Proyecto</a>
+        </button>
+
+        <button class="btn-outline">
+          <a href="#instituciones"> Ver Instituciones</a>
+        </button>
+      </div>
+
+      <div class="hero-stats">
+
+        <div class="stat">
+          <h3>100%</h3>
+          <p>Natural</p>
+        </div>
+
+        <div class="stat">
+          <h3>+Fibra</h3>
+          <p>Nutrición</p>
+        </div>
+
+        <div class="stat">
+          <h3>Local</h3>
+          <p>Producción</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <video autoplay muted loop playsinline>
+        <source src="assets/video1.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+     NUESTROS PRODUCTOS
+========================= -->
+
+<section class="products" id="productos">
+
+  <p class="section-tag">
+    NUESTROS PRODUCTOS
+  </p>
+
+  <h2 class="section-title">
+    Sabores con <span>identidad local</span>
+  </h2>
+
+  <p class="products-description">
+    Cada variedad de Batat Rojense busca combinar alimentación saludable,
+    producción artesanal y sabores únicos desarrollados desde una mirada educativa.
+  </p>
+
+  <!-- CARDS -->
+  <div class="products-grid">
+
+    <!-- PRODUCTO 1 -->
+    <div class="product-card active" data-product="clasica">
+
+      <img src="assets/batatachip.webp" alt="Batata Clásica">
+
+      <div class="product-info">
+
+        <span class="product-label">
+          ORIGINAL
+        </span>
+
+        <h3>Chip de batata </h3>
+
+        <p>
+          Batata crocante con sal marina y cocción artesanal.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PRODUCTO 2 -->
+    <div class="product-card" data-product="ahumada">
+
+      <img src="assets/dulce de batata.webp" alt="Batata Ahumada">
+
+      <div class="product-info">
+
+        <span class="product-label">
+          INTENSA
+        </span>
+
+        <h3>Dulce de batata</h3>
+
+        <p>
+          Toques especiados con perfil ahumado suave.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PRODUCTO 3 -->
+    <div class="product-card" data-product="dulce">
+
+      <img src="assets/batata.jpeg" alt="Batata Dulce">
+
+      <div class="product-info">
+
+        <span class="product-label">
+          ESPECIAL
+        </span>
+
+        <h3>Batata Natural</h3>
+
+        <p>
+          Del campo a tu casa
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- PANEL -->
+  <div class="nutrition-panel">
+
+    <div class="panel-header">
+
+      <div>
+        <h3 id="panelTitle">
+          Clásica Natural
+        </h3>
+
+        <p id="panelText">
+          Elaborada con ingredientes simples y producción artesanal.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- BARRAS -->
+    <div class="nutrition-bars">
+
+      <div class="nutrition-item">
+        <span>Vitamina A</span>
+
+        <div class="bar">
+          <div class="fill" id="vitA"></div>
+        </div>
+
+        <strong id="vitAText">85%</strong>
+      </div>
+
+      <div class="nutrition-item">
+        <span>Vitamina C</span>
+
+        <div class="bar">
+          <div class="fill" id="vitC"></div>
+        </div>
+
+        <strong id="vitCText">72%</strong>
+      </div>
+
+      <div class="nutrition-item">
+        <span>Fibra</span>
+
+        <div class="bar">
+          <div class="fill" id="fiber"></div>
+        </div>
+
+        <strong id="fiberText">91%</strong>
+      </div>
+
+      <div class="nutrition-item">
+        <span>Potasio</span>
+
+        <div class="bar">
+          <div class="fill" id="potassium"></div>
+        </div>
+
+        <strong id="potassiumText">78%</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- IDENTIDAD -->
+  <section class="identity" id="identidad">
+
+    <p class="section-tag">
+      NUESTRA IDENTIDAD
+    </p>
+
+    <h2 class="section-title">
+      Educación y <span>Agroecología</span>
+    </h2>
+
+
+
+    <P class="identidad-texto">Nuestro proyecto busca impulsar la producción local de alimentos en el pueblo, integrando a estudiantes de escuelas técnicas y agrarias en todo el proceso de elaboración y comercialización. La iniciativa combina educación y trabajo práctico, permitiendo que los jóvenes apliquen sus conocimientos en una experiencia real. </p>
+<p class="identidad-texto">
+La identidad del proyecto se basa en el compromiso con la comunidad, el trabajo en equipo y el desarrollo local. A través de la producción de un alimento de calidad, se busca fortalecer la economía regional, promover el consumo de productos locales y generar nuevas oportunidades para el pueblo.</p>
+
+      <div class="divmap">
+
+        <img class="imagen-arriba" src="assets/identidad.jpeg" alt="Estudiantes">
+</div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- NUTRICIÓN -->
+<section class="nutrition" id="nutricion">
+
+  <!-- TEXTO IZQUIERDA -->
+  <div class="nutrition-left">
+
+    <p class="section-tag">
+      VALOR NUTRICIONAL
+    </p>
+
+    <h2 class="section-title">
+      Un alimento <span>real</span>
+    </h2>
+
+    <p class="nutrition-text">
+      La batata es una fuente natural de energía, fibra y vitaminas.
+      Nuestro objetivo es promover hábitos alimenticios más saludables
+      mediante productos simples y conscientes.
+    </p>
+
+  </div>
+
+  <!-- IMAGEN DERECHA -->
+  <div class="imagen-nutricion">
+
+    <img 
+      src="assets/imagenbatat.jpeg" 
+      alt="Estudiantes"
+    >
+
+  </div>
+
+</section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section class="about" id="quienes">
+
+    <div class="about-image">
+
+      <img src="assets/imagengrupo.jpeg" alt="Estudiantes">
+
+    </div>
+
+    <div class="about-text">
+
+      <p class="section-tag">
+        QUIÉNES SOMOS
+      </p>
+
+      <h2 class="section-title">
+        Un proyecto que conecta
+        <span>educación y comunidad</span>
+      </h2>
+
+      <p>
+        Batat Rojense nace como una iniciativa educativa enfocada en
+        revalorizar la producción local y fomentar una alimentación más consciente.
+      </p>
+
+      <p>
+        A través del trabajo conjunto entre estudiantes, docentes e instituciones,
+        buscamos generar experiencias reales de aprendizaje y desarrollo comunitario.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- INSTITUCIONES -->
+  <section class="institutions" id="instituciones">
+
+    <p class="section-tag">
+      INSTITUCIONES VINCULADAS
+    </p>
+
+    <h2 class="section-title">
+      Trabajo <span>colaborativo</span>
+    </h2>
+
+<div class="carrusel">
+
+        <div class="carrusel">
+
+
+        <div class="grupo">
+            <div class="card"><img src="assets/agricultura-img-logo-provincia.png" id=""></div>
+            <div class="card"><img src="assets/logo 2010-Photoroom.png"></div>
+            <div class="card"><img src="assets/Logo_INTA.svg.png"></div>
+            <div class="card"><img src="assets/escuela.png"></div>
+
+
+
+            
+        </div>
+
+        <div aria-hidden class="grupo">
+            <div class="card"><img src="assets/agricultura-img-logo-provincia.png" id=""></div>
+            <div class="card"><img src="assets/logo 2010-Photoroom.png"></div>
+            <div class="card"><img src="assets/Logo_INTA.svg.png"></div>
+            <div class="card"><img src="assets/escuela.png"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</section>
+
+
+<section class="mapa reviews">
+  <h2 class="section-title">Lugares <span>de venta</span></h2>
+  <div class="mapa-container mapitadown">
+    
+    <iframe 
+    src="https://www.google.com/maps/d/u/0/embed?mid=198lWYiEGjtOPfeL4UkbTCRwqjiXq3Kw&ehbc=2E312F"
+    width="480" 
+    height="480">
+  </iframe>
+</div>
+</section>
+
+<section class="reviews">
+  <h2 class="section-title">Lo que dicen <span>nuestros clientes</span></h2>
+
+  <button id="openForm" class="btn-primary">✨ Escribir una reseña</button>
+
+  <div id="formContainer" class="hidden">
+    <h3>Dejar una reseña</h3>
+
+    <input type="text" id="name" placeholder="Tu nombre" />
+
+    <div class="stars" id="stars"></div>
+
+    <textarea id="comment" placeholder="Escribe tu experiencia..."></textarea>
+
+    <div class="buttons">
+      <button id="cancel" class="btn-outline">Cancelar</button>
+      <button id="submit" class="btn-outline">Publicar reseña</button>
+    </div>
+  </div>
+
+  <div id="reviewsList"></div>
+</section>
+
+  <!-- FORMULARIO -->
+<section class="form-section" id="formulario">
+
+    <p class="section-tag">
+      PARTICIPÁ DEL PROYECTO
+    </p>
+
+    <h2 class="section-title">
+      Sumate a <span>Batat Rojense</span>
+    </h2>
+
+    <p class="form-description">
+      Completá el formulario para enviarnos tu opinión,
+      contactarte con el proyecto o participar de futuras actividades.
+    </p>
+
+    <div class="form-container">
+
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe58YPz0Pvw9H46siSEgkUfsHXselSjklYh8DOmJe_oBdc6tA/viewform?embedded=true" 
+        width="640"
+        height="480"
+        frameborder="0" 
+        marginheight="0"
+        marginwidth="0">Cargando…
+      </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <h2>
+    ¿Listo para conocer una
+    <span>nueva forma de alimentarse?</span>
+  </h2>
+
+  <p class="footer-text">
+    Descubrí cómo Batat Rojense une educación, agroecología
+    y producción local en un proyecto pensado para promover
+    hábitos más saludables y conscientes.
+  </p>
+
+  <!-- BOTÓN CENTRADO -->
+  <div class="footer-contact">
+
+<button onclick="copyMail()" class="btn-primary">
+  📋 Copiar email
+</button>
+
+<div id="toast" class="toast">
+  ✅ Email copiado al portapapeles
+</div>
+
+  </div>
+
+
+  <div class="footer-divider"></div>
+
+
+  <div class="footer-bottom">
+
+    <div class="footer-logo">
+      Batat <span>Rojense</span>
+    </div>
+
+    <p>
+      © 2026 Batat Rojense · Proyecto educativo agroecológico.
+    </p>
+
+  </div>
+
+</footer>
+
+  <script src="main.js"></script>
+  <script src="productos.js"></script>
+  <script type="module" src="reseña.js"></script>
+</body>
+</html>
