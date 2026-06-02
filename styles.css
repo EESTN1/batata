@@ -760,6 +760,8 @@ input, textarea {
     padding:90px 30px;
   }
 
+  
+  
   .nutrition-panel{
     padding:30px;
   }
@@ -946,7 +948,11 @@ input, textarea {
   .header{
     padding:20px 30px;
   }
-
+  
+  .identidad-texto{
+      font-size: 16px;
+  }
+  
   .menu-btn{
     display:block;
     background:none;
