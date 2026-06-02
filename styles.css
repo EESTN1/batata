@@ -991,7 +991,6 @@ input, textarea {
   }
 
   .hero-stats{
-    flex-direction:column;
     gap:25px;
   }
 
@@ -1046,7 +1045,6 @@ input, textarea {
   .hero{
     flex-direction:column;
     padding:80px 30px 60px;
-    gap:40px;
   }
   .hero-left{
     width:100%;
