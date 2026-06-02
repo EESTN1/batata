@@ -92,7 +92,7 @@ async function loadReviews() {
       <p>${data.comment}</p>
       ${
         data.userId === userId
-          ? `<button class="btn-outline" onclick="editReview('${docSnap.id}', '${data.comment}')">Editar</button>
+          ? `
              <button class="btn-outline" onclick="deleteReview('${docSnap.id}')">Eliminar</button>`
           : ""
       }
