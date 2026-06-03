@@ -670,7 +670,6 @@ section{
 
 .reviews {
   text-align: center;
-  padding: 80px;
     background: var(--purple-dark);
   color: var(--cream);
 }
