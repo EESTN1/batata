@@ -1013,6 +1013,17 @@ input, textarea {
     align-content: center;
 }
 
+  @media(max-width:768px){
+  /* carru MOBILE */
+  .card img{
+      pading: 0rem;
+      flex: 0 0 5em;
+      font-size: 3rem;
+      border-radius: .2em;
+      text-align: center;
+      align-content: center;
+  }
+  }
 
 }
 
