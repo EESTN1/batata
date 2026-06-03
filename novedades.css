@@ -466,7 +466,7 @@
 }
 .stats-iframe-wrap iframe {
   width: 100%;
-  height: 420px;
+  height: auto;
   border: none;
   display: block;
 }
