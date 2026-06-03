@@ -635,6 +635,15 @@ section{
   color:#F4A261;
 }
 
+  .card img{
+      pading: 1rem;
+      flex: 0 0 5em;
+      font-size: 3rem;
+      border-radius: .2em;
+      text-align: center;
+      align-content: center;
+  }
+
 .mapa{  background: var(--cream);
   color: var(--purple-dark);}
 
@@ -1012,18 +1021,6 @@ input, textarea {
     text-align: center;
     align-content: center;
 }
-
-  @media(max-width:768px){
-  /* carru MOBILE */
-  .card img{
-      pading: 0rem;
-      flex: 0 0 5em;
-      font-size: 3rem;
-      border-radius: .2em;
-      text-align: center;
-      align-content: center;
-  }
-  }
 
 }
 
