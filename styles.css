@@ -435,7 +435,7 @@ section{
 .institutions{
   background:var(--cream);
   border:1px solid rgba(90,42,108,0.1);
-  padding:40px 30px;
+  padding: 80px 30px;
   transition:0.3s;
   color: var(--purple-dark);
 }
