@@ -378,6 +378,10 @@ section{
   font-weight:500;
 }
 
+.hidden {
+  display: none;
+}
+
 /* ABOUT */
 
 .about{
