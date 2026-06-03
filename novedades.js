@@ -68,6 +68,7 @@
 
     onAuthStateChanged(auth, user => {
       adminActivo = !!user;
+      document.getElementById('stats-admin').classList.toggle('visible', adminActivo);
       document.getElementById('barra-admin').classList.toggle('visible', adminActivo);
       const candado = document.getElementById('btn-candado');
       candado.title = adminActivo ? 'Cerrar sesión' : 'Acceso administrador';
