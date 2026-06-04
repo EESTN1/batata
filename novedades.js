@@ -156,7 +156,7 @@ function esc(s) {
 function renderMuro(items) {
   const muro = document.getElementById('nov-muro');
   if (!items.length) {
-    muro.innerHTML = '<p class="nov-vacio">Próximamente habrá novedades por aquí ✦</p>';
+    muro.innerHTML = '<p class="nov-vacio">Próximamente habrá novedades por aquí ☆</p>';
     return;
   }
   muro.innerHTML = items.map(item => {
