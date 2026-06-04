@@ -664,7 +664,7 @@ section{
   margin: 0 auto;
   align-items: center;
   border-radius: 20px;
-  padding-top: 15px;
+  margin-top: 20px;
 }
 
 .mapitadown iframe {
