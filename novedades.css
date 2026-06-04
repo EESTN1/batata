@@ -438,8 +438,9 @@
 
 .stats-fila {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+    grid-template-columns: repeat(2, 600px);
+    justify-content: center;
+    gap: 24px;
 }
 
 .stats-card {
@@ -448,6 +449,7 @@
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 2px 16px rgba(90,40,20,.06);
+  width: fit-content;
 }
 
 .stats-card-titulo {
@@ -460,13 +462,11 @@
 }
 
 .stats-iframe-wrap {
-  width: 100%;
   overflow: hidden;
   position: relative;
 }
+
 .stats-iframe-wrap iframe {
-  width: 75%;
-  height: auto;
   border: none;
   display: block;
 }
