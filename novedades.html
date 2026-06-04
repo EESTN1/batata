@@ -57,6 +57,30 @@
     </div>
   </div>
 
+  <!-- ══════════════ BARRA ADMIN ══════════════ -->
+  <div id="barra-admin">
+    <div class="admin-badge">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Modo administrador activo
+    </div>
+    <div id="form-novedad">
+      <h4 id="form-titulo-label">Nueva novedad</h4>
+      <input  class="form-input"    id="inp-titulo" type="text"  placeholder="Título de la novedad"/>
+      <textarea class="form-textarea" id="inp-cuerpo" placeholder="Escribí el contenido de la novedad…"></textarea>
+      <div class="form-error" id="form-error"></div>
+      <div class="form-botones">
+        <button class="btn-cancelar" onclick="cancelarEdicion()">Cancelar</button>
+        <button class="btn-pub" id="btn-pub" onclick="publicar()">Publicar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ MURO ══════════════ -->
+  <div id="nov-muro">
+
+ 
+
+  </div>
 
 <!-- ══════════════ STATS ADMIN ══════════════ -->
 <div id="stats-admin">
@@ -213,30 +237,6 @@
 </div>
 
   
-  <!-- ══════════════ BARRA ADMIN ══════════════ -->
-  <div id="barra-admin">
-    <div class="admin-badge">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      Modo administrador activo
-    </div>
-    <div id="form-novedad">
-      <h4 id="form-titulo-label">Nueva novedad</h4>
-      <input  class="form-input"    id="inp-titulo" type="text"  placeholder="Título de la novedad"/>
-      <textarea class="form-textarea" id="inp-cuerpo" placeholder="Escribí el contenido de la novedad…"></textarea>
-      <div class="form-error" id="form-error"></div>
-      <div class="form-botones">
-        <button class="btn-cancelar" onclick="cancelarEdicion()">Cancelar</button>
-        <button class="btn-pub" id="btn-pub" onclick="publicar()">Publicar</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════ MURO ══════════════ -->
-  <div id="nov-muro">
-
- 
-
-  </div>
 
   <!-- ══════════════ FOOTER ══════════════ -->
   <footer>
