@@ -1,7 +1,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --crema:   #f5ede0;
+      --crema:   #F3E9D2;
       --crema2:  #ede0cc;
       --naranja: #c8601a;
       --naranja2:#a04010;
