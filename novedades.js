@@ -165,7 +165,6 @@ function renderMuro(items) {
       : '';
     const acciones = adminActivo ? `
       <div class="nov-card-acciones">
-        <button onclick="editar('${item.id}', ${JSON.stringify(esc(item.titulo))}, ${JSON.stringify(esc(item.cuerpo))})">Editar</button>
         <button class="borrar" onclick="eliminar('${item.id}')">Eliminar</button>
       </div>` : '';
     return `
