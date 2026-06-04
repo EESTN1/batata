@@ -158,6 +158,10 @@ body{
 .btn-outline{
   background:transparent;
   border:1px solid var(--purple-light);
+  color:var(--purple-dark);
+}
+
+#toggleReviews{
   color:var(--cream);
 }
 
